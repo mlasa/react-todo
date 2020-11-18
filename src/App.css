@@ -1,0 +1,32 @@
+div.todo-app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 6px #1414147a;
+  background: rgb(10, 12, 36);
+}
+
+#todo-text{
+  margin-bottom: 50px;
+
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  color: rgb(228, 228, 228);
+}
+#todo-text::after {
+  content: "|";
+  animation: writtingBar 0.7s infinite;
+}
+@keyframes writtingBar {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

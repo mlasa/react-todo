@@ -1,0 +1,47 @@
+div.todo-row{
+  background: transparent;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: block;
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.todo-row:nth-child(even){
+  background:rgb(120, 50, 199);  
+}
+.todo-row:nth-child(odd){
+  background:rgb(10, 138, 155);  
+}
+
+div.todo-row + div.todo-row{
+  margin-top: 10px;
+}
+
+svg{
+  color:#fff;
+}
+div.icons{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:20px;
+}
+div.todo-row-text{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 500px;
+}
+div.todo-row-text p {
+  color: #fff;
+  word-wrap: break-word;
+}
+.complete div.todo-row-text p{
+  text-decoration: line-through;
+}
